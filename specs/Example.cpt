@@ -1,0 +1,55 @@
+Created by testinium on 7.12.2021
+
+This is a concept file with following syntax for each concept.
+# Uygulamanın açıldığı kontrol edilir.
+* "5" saniye bekle
+* "com.ozdilek.ozdilekteyim:id/textView" id'li element "Mağazadan Alışveriş" text değerini içerdiğni kontrol et
+# Alışverişe başla butonuna tıklanır.
+* "1" saniye bekle
+* "com.ozdilek.ozdilekteyim:id/tv_startShoppingStore" id'li elemente tıkla
+# Alışveriş sayfasının açıldıgı doğrulanır
+* "3" saniye bekle
+* "com.ozdilek.ozdilekteyim:id/tvMarketName" id'li element "Market" text değerini içerdiğni kontrol et
+# Katogiriler Sayfası Açılır
+* "1" saniye bekle
+* "com.ozdilek.ozdilekteyim:id/nav_categories" id'li elemente tıkla
+# Katogoriler Sayfasının açıldıgı dogrulanır.
+* "3" saniye bekle
+* "//*[contains(@text,'Kategoriler')]" xpath'li element "Kategoriler" değerini içerdiğini kontrol et
+# Menüden <Keyword> Seçeneğine tıklanır.
+* <Keyword> butonuna tıklanır
+* "3" saniye bekle
+# Menuden <Keyword> kategorisi açılır.
+* <Keyword> butonuna tıklanır
+* "3" saniye bekle
+# Sayfanın en aşagasına doğru iki kere scrol edilir.
+* "2" Scrol yapılır.
+* "3" saniye bekle
+# Ürünlerden rasgele bir ürün seçilir.
+* "com.ozdilek.ozdilekteyim:id/imageView" random secildi
+ * "3" saniye bekle
+# Ürün detay sayfası açıldığı kontrol edilir.
+* "com.ozdilek.ozdilekteyim:id/tvColorDesc" id'li element "Renk" text değerini içerdiğni kontrol et
+* "1" saniye bekle
+# Favoriler butonuna tıklanır.
+* "com.ozdilek.ozdilekteyim:id/imgFav" id'li elemente tıkla
+* "3" saniye bekle
+# Giriş yapma sayfasının açıldığı dogrulanır.
+* "com.ozdilek.ozdilekteyim:id/tvForgetPassword" id'li element "Parolamı Unuttum" text değerini içerdiğni kontrol et
+#  Kullanıcı adı alanına <text> bilgisi girilir ve <Password> alanına şifre yazılır.
+* "com.ozdilek.ozdilekteyim:id/etEposta" id'li elemete <text> text değerini yaz
+ * "com.ozdilek.ozdilekteyim:id/etPassword" id'li elemete <Password> text değerini yaz
+ * "3" saniye bekle
+# Geri butonuna 2 kere tıklanır.
+* "com.ozdilek.ozdilekteyim:id/ivBack" id'li elemente tıkla
+* "3" saniye bekle
+* "com.ozdilek.ozdilekteyim:id/ivBack" id'li elemente tıkla
+* "3" saniye bekle
+# Rasgele bir ürün seçilir.
+* "com.ozdilek.ozdilekteyim:id/imageView" random secildi
+* "3" saniye bekle
+* "com.ozdilek.ozdilekteyim:id/relLaySizeIn" random secildi
+* "3" saniye bekle
+# Seçilen ürün sepete eklenir.
+* "com.ozdilek.ozdilekteyim:id/ivAddCart" id'li elemente tıkla
+* "3" saniye bekle
